@@ -23,6 +23,9 @@ from config import (
 )
 from wrappers import MetricExtractorWrapper, _match_keys, _to_scalar
 
+import bluesky_gym
+bluesky_gym.register_envs()   # ← WAJIB
+env = gym.make('CompetitionEnv-v0')
 
 def make_env(seed: int):
     def _init():

@@ -10,6 +10,10 @@ import bluesky_gym  # noqa: F401  -> registrasi env
 from config import ENV_ID, SEED
 from wrappers import MetricExtractorWrapper
 
+import bluesky_gym
+bluesky_gym.register_envs()   # ← WAJIB
+env = gym.make('CompetitionEnv-v0')
+
 
 def main():
     print(f"[smoke] Membuat env: {ENV_ID}")

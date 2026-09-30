@@ -19,6 +19,9 @@ from config import (
 )
 from wrappers import MetricExtractorWrapper
 
+import bluesky_gym
+bluesky_gym.register_envs()   # ← WAJIB
+env = gym.make('CompetitionEnv-v0')
 
 def make_env(rank: int, seed: int = SEED):
     """Factory: buat env tunggal, seed, dan bungkus."""
