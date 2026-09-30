@@ -1,9 +1,23 @@
-**/__pycache__/*
-.DS_store
-.vscode
-TODO.txt
-images/
-logs/
-models/
-dist/
+﻿# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+.env
 
+# PPO trial outputs
+bluesky-ppo-trial/runs/
+bluesky-ppo-trial/**/*.zip
+bluesky-ppo-trial/**/*.pkl
+bluesky-ppo-trial/**/*.csv
+bluesky-ppo-trial/checkpoints/
+
+# Jupyter / IDE
+.ipynb_checkpoints/
+.vscode/
+.idea/
+
+# OS
+.DS_Store
+Thumbs.db
